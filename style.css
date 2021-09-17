@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-family: 'Fira Sans', sans-serif;
+}
+html{
+    font-size: 62.5% ;
+    line-height: 1.5;
+}
+footer{
+    color: white;
+    background: black;
+    /* display: flex; */
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+    /* color: ; */
+}
+a{
+    color: wheat;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+.title{
+    /* padding: 5rem 0px; */
+    margin: 4rem 0;
+    /* border:1px solid white; */
+}
+
+.title h2{
+    font-size: 2.5rem;
+    margin-bottom: 1.3rem;
+    /* border-bottom: 1px solid orange; */
+    text-transform: capitalize;
+    position: relative;
+}
+.title h2:after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: orange;
+    width: 8rem;
+    height: 3px;
+    left: 0rem;
+    /* top: 100%; */
+}
+
+.title a:hover{
+    padding-left: 10px;
+}
+.title i{
+    margin: 0.5rem;
+    padding: 1.5rem;
+    /* border: 1px solid white; */
+    background: grey;
+    border-radius: 50%;
+    font-size: 2.53rem;
+    color: black;
+}
+.title i:hover{
+    background: orangered;
+    transform: scale(1.1);
+}
+@media(max-width:768px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
